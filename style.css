@@ -1,0 +1,343 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for Landing Page */
+.container1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: #003D31;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #003D31;
+}
+
+.btn {
+    background-color: #C3EB50;
+    color: #003D31;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #003D31;
+    border-radius: 10px;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #C3EB50;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #C3EB50;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.highlight-text {
+    color: #C3EB50;
+    font-weight: bold;
+}
+
+/* Application Form Styles */
+.hidden {
+    display: none;
+}
+
+.application-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Persona-Funnel Mismatch Section */
+.container2 {
+    padding: 50px 20px;
+    background-color: #eaf8f4;
+    text-align: center;
+}
+
+.container2 h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.container2 .highlight {
+    background-color: #8bd1c8;
+    padding: 0 5px;
+}
+
+.container2 p {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+.problems-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #5fc1a0, #8bd1c8);
+    padding: 40px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.problems-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.problems-list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.problems-list li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.problems-list li::before {
+    content: '\25B6';
+    color: red;
+    margin-right: 10px;
+}
+
+/* Revvlift Explanation Section */
+.container3 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.container3 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container3 h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container3 .highlight {
+    background-color: #a8dfd1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container3 p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature img {
+    width: 100px;
+    height: auto;
+}
+
+.feature p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .problems-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .problems-text {
+        text-align: center;
+    }
+
+    .problems-list {
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+/* Close Button Styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d; /* Bright red for visibility */
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #ff1a1a; /* Slightly darker red for hover */
+    transform: scale(1.1); /* Slight zoom effect for hover */
+}
+/* Styles for the row of images */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Increased space between images */
+    margin-top: 30px;
+}
+
+.hero-image {
+    height: 250px; /* Set a fixed height for all images */
+    width: auto; /* Automatically adjust the width to maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
